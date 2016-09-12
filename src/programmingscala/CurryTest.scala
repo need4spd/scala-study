@@ -1,8 +1,5 @@
 package programmingscala
 
-/**
-  * Created by coupang on 2016. 9. 12..
-  */
 object CurryTest extends App {
 
   def filter(xs: List[Int], p: Int => Boolean): List[Int] =
