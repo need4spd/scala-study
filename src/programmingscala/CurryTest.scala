@@ -31,4 +31,12 @@ object CurryTest extends App {
   val costOfApples = locallyTaxed(price("apples"))
 
   assert(Math.round(costOfApples) == 280)
+
+  //Recursive
+  def dividesBy(n: Int)(x: Int) = ((x % n) == 0)
+
+  println(filter(nums, dividesBy(2)))
+  println(filter(nums, dividesBy(3)))
+
+  print(1 :: List("a","b","c"))
 }
